@@ -4,27 +4,36 @@ const experienceData = [
   {
     id: 1,
     role: 'Software Engineer Intern',
+    org: 'NeuZenAI',
+    location: 'Dallas, Texas',
+    dates: 'May 2026 - August 2026',
+    bullets: [
+      'Designed a Model Context Protocol (MCP) server for an AI-powered social media content generation platform.',
+      'Gave AI assistants (Claude, ChatGPT, Cursor) tool-based access to generate, review, and publish content — 15 tools spanning content generation, live publishing, and multi-day campaign planning with a human-approval workflow.',
+      'Built and designed a token and OAuth-based authentication architecture, producing a full technical implementation for MCP connection.',
+    ],
+  },
+  {
+    id: 2,
+    role: 'Research Assistant — Computer Vision & Deep Learning for Biomedical Image Analysis',
+    org: 'Rutgers University',
+    location: 'Piscataway, NJ',
+    dates: 'Jan 2026 – Currently Working',
+    bullets: [
+      'Gathered numerical data from images regarding scratch area over time and conducted statistical analysis in Excel.',
+      'Built a Python program to conduct image color-thresholding analysis to gather data for biological experiments.',
+      'Built a computer vision and deep learning system, implementing a U-Net convolutional neural network from scratch using TensorFlow/Keras to achieve end-to-end semantic segmentation of wound regions across 1M+ pixels.',
+    ],
+  },
+  {
+    id: 3,
+    role: 'Software Engineer Intern',
     org: 'Astralinx',
     location: 'Remote',
     dates: 'May 2025 – August 2025',
     bullets: [
       'Developed a business document suggestion platform that provided automated recommendations for grammar, clarity, and professional tone, helping users produce polished business papers efficiently.',
-      'Developed and maintained a Spring Boot backend with an SQL database, implementing RESTful APIs and data processing logic.',
-      'Optimized backend query performance, reducing API response time by 35%.',
-      'Built an interactive TypeScript frontend, enhancing user experience with dynamic interfaces and real-time suggestion updates.',
-      'Integrated natural language processing (NLP) features to generate context-aware editing suggestions.',
-    ],
-  },
-  {
-    id: 2,
-    role: 'Research Assistant — Image Data Analysis for Wound Progression in Cell Biology Models',
-    org: 'Rutgers University',
-    location: 'Piscataway, NJ',
-    dates: 'March 2025 – Present',
-    bullets: [
-      'Gathered numerical data from images regarding scratch area over time by examining pixel values and conducting statistical data analysis on Google Sheets/Excel; automated the entire image analysis process using Python.',
-      'Built a Python program to conduct image color thresholding analysis to gather data for biological experiments.',
-      'Designing a convolutional neural network capable of conducting image segmentation to isolate wound regions from surrounding tissue.',
+      'Developed and maintained a Spring Boot backend with an SQL database, implementing RESTful APIs and optimizing query performance to reduce API response time by 35%.',
     ],
   },
 ]

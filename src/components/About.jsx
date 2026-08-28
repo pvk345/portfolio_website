@@ -49,9 +49,10 @@ export default function About() {
                     <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed relative z-10">
                         I am a Computer Science and Data Science student at Rutgers University, New Brunswick, with a
                         strong foundation in software engineering and a growing focus on machine learning and computer
-                        vision. I've built full-stack applications with React, Spring Boot, and TypeScript, and more
-                        recently I've been applying deep learning to real research problems, from convolutional neural
-                        networks for image segmentation to AI-powered data analysis tools.
+                        vision. As a Software Engineer Intern at NeuZenAI, I designed a Model Context Protocol server
+                        that gives AI assistants like Claude, ChatGPT, and Cursor tool-based access to generate and
+                        publish content. As a Research Assistant at Rutgers, I built a U-Net convolutional neural
+                        network from scratch for biomedical image segmentation.
                         I'm Amazon Cloud Practitioner certified and enjoy working across the stack, from Python and
                         TensorFlow on the backend to modern JavaScript frameworks on the front end.
                     </p>

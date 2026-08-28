@@ -1,5 +1,5 @@
 import React from "react";
-import { SiTensorflow, SiLangchain, SiNextdotjs } from "react-icons/si";
+import { SiGmail, SiNextdotjs } from "react-icons/si";
 
 const ProjectCard = ({ Icon, title, subtitle, description, link }) => {
   return (
@@ -39,43 +39,37 @@ const ProjectCard = ({ Icon, title, subtitle, description, link }) => {
 export default function Projects() {
   const listProjects = [
     {
-      Icon: SiTensorflow,
-      title: "CNN for Image Segmentation",
-      subtitle: "Python, TensorFlow, Keras, Deep Learning, Computer Vision",
+      Icon: SiGmail,
+      title: "Recruiter Outreach Automation",
+      subtitle: "Python, Flask, LangChain, OpenAI API, SQLite, Apollo.io API, Gmail API (OAuth2)",
       description: `
-        • Implemented a symmetrical encoder-decoder U-Net architecture from scratch utilizing the TensorFlow/Keras
-        functional API to achieve end-to-end semantic pixel-level segmentation.
-        • Formulated a customized pixel-activation classification layer using a 1×1 convolution with a sigmoid
-        activation function, establishing a stable continuous probability distribution mapped across more than
-        1 million individual canvas pixels.
-        • Created an automated image-padding tracking algorithm to mathematically compute active canvas ratios,
-        normalizing final wound surface area calculations against the structural artifacts of square image
-        transformations.
-      `,
-      link: "https://github.com/pvk345",
-    },
-    {
-      Icon: SiLangchain,
-      title: "DataChat",
-      subtitle: "Python, LangChain, GPT-4o, Streamlit, Pandas, Plotly, ReportLab",
-      description: `
-        • Built an AI-powered data analyst that lets users upload any CSV or Excel file and query it in plain
-        English, generating and executing pandas code against real data via a LangChain agent.
-        • Engineered a three-stage chained LLM pipeline that analyzes datasets, writes narrative business reports,
-        and exports them as formatted PDFs using ReportLab.
-        • Deployed on Hugging Face Spaces via Docker with environment-based secret management.
+        • Built a full-stack outreach automation tool that discovers company recruiters via the Apollo.io
+        API and drafts personalized cold emails using OpenAI.
+        • Integrated the Gmail API with OAuth2 to send drafted emails directly through the user's own
+        Gmail account.
+        • Engineered a LangChain agent with a custom web-search tool to autonomously research target
+        companies in real time, grounding each email in verifiable, company-specific facts instead of
+        generic language.
+        • Designed a SQLite-backed review workflow with rate-limited sending to protect email
+        deliverability and support safe, real-world outreach at scale.
       `,
       link: "https://github.com/pvk345",
     },
     {
       Icon: SiNextdotjs,
-      title: "ClimateShield",
-      subtitle: "Next.js, XGBoost, AWS, Supabase",
+      title: "Polymarket Trader",
+      subtitle: "Next.js, FastAPI, PostgreSQL, Redis, AWS Lambda, Vercel, Render, Docker, Resend",
       description: `
-        • Built a full-stack climate risk intelligence platform that scores wildfire and flood risk (0-100) for
-        any US property address using a custom XGBoost ML model trained on 4 government data sources.
-        • Deployed ML scoring API on AWS Lambda via Docker/ECR, achieving a wildfire MAE of 5.72 and flood MAE of
-        7.01 across 3,144 US counties.
+        • Built a full-stack automated trading platform that evaluates Polymarket prediction-market
+        probabilities against user-defined rules, live across ~500 markets.
+        • Integrated the Alpaca API to automatically place corresponding stock trades based on triggered
+        rules.
+        • Engineered an independently-scheduled evaluator on AWS Lambda (Docker/ECR, EventBridge) to
+        execute rule and watchlist logic against a Postgres database.
+        • Implemented multithreading with Python's ThreadPoolExecutor to parallelize concurrent ticker
+        price lookups, cutting refresh latency 9x (0.89s → 0.10s).
+        • Implemented JWT authentication with bcrypt password hashing and Redis-backed caching for live
+        market data.
       `,
       link: "https://github.com/pvk345",
     },

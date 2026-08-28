@@ -8,7 +8,9 @@ export default function Navbar() {
     { id: 2, name: 'About', link: '#about' },
     { id: 3, name: 'Skills', link: '#skills' },
     { id: 4, name: 'Experience', link: '#experience' },
-    { id: 5, name: 'My projects', link: '#projects' }
+    { id: 5, name: 'Education', link: '#education' },
+    { id: 6, name: 'My projects', link: '#projects' },
+    { id: 7, name: 'Contact', link: '#contact' }
   ];
 
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import {
   SiJavascript, SiHtml5, SiCss, SiPython, SiReact, SiGit, SiMongodb,
-  SiTensorflow, SiKeras, SiUnity, SiLangchain,
-  SiStreamlit, SiPandas, SiDocker, SiHuggingface,
+  SiTensorflow, SiKeras, SiUnity, SiLangchain, SiNodedotjs, SiPostgresql, SiRedis,
+  SiStreamlit, SiPandas, SiDocker, SiHuggingface, SiC, SiCplusplus,
 } from 'react-icons/si'
 import { TbSql } from 'react-icons/tb'
 import { FaJava } from 'react-icons/fa'
@@ -14,28 +14,50 @@ const languages = [
   { name: 'HTML', icon: SiHtml5 },
   { name: 'CSS', icon: SiCss },
   { name: 'JavaScript', icon: SiJavascript },
-  { name: 'React', icon: SiReact },
-  { name: 'Git', icon: SiGit },
-  { name: 'MongoDB', icon: SiMongodb },
   { name: 'SQL', icon: TbSql },
+  { name: 'C', icon: SiC },
+  { name: 'C++', icon: SiCplusplus },
 ]
 
-const tools = [
+const frameworks = [
+  { name: 'React', icon: SiReact },
+  { name: 'Node', icon: SiNodedotjs },
   { name: 'TensorFlow', icon: SiTensorflow },
   { name: 'Keras', icon: SiKeras },
   { name: 'Unity', icon: SiUnity },
-  { name: 'VS Code', icon: VscVscode },
   { name: 'LangChain', icon: SiLangchain },
   { name: 'Streamlit', icon: SiStreamlit },
   { name: 'Pandas', icon: SiPandas },
-  { name: 'Docker', icon: SiDocker },
   { name: 'Hugging Face', icon: SiHuggingface },
+]
+
+const databases = [
+  { name: 'MongoDB', icon: SiMongodb },
+  { name: 'PostgreSQL', icon: SiPostgresql },
+  { name: 'Redis', icon: SiRedis },
+]
+
+const devops = [
+  { name: 'Docker', icon: SiDocker },
+  { name: 'Git', icon: SiGit },
+  { name: 'VS Code', icon: VscVscode },
 ]
 
 const SkillBadge = ({ name, icon: Icon }) => (
   <div className="flex flex-col items-center justify-center gap-2 bg-gray-800 rounded-lg shadow-lg px-4 py-5 w-24 sm:w-28 hover:bg-purple-800 transition-all duration-300">
     <Icon className="text-3xl sm:text-4xl" />
     <span className="text-xs sm:text-sm text-center text-gray-200">{name}</span>
+  </div>
+)
+
+const SkillGroup = ({ title, items, delay }) => (
+  <div data-aos="fade-up" data-aos-delay={delay} className="space-y-3">
+    <h3 className="text-lg sm:text-xl font-semibold text-purple-300">{title}</h3>
+    <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+      {items.map((s) => (
+        <SkillBadge key={s.name} name={s.name} icon={s.icon} />
+      ))}
+    </div>
   </div>
 )
 
@@ -58,23 +80,10 @@ export default function Skills() {
           </p>
         </header>
 
-        <div data-aos="fade-up" data-aos-delay="500" className="space-y-3">
-          <h3 className="text-lg sm:text-xl font-semibold text-purple-300">Languages</h3>
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-            {languages.map((s) => (
-              <SkillBadge key={s.name} name={s.name} icon={s.icon} />
-            ))}
-          </div>
-        </div>
-
-        <div data-aos="fade-up" data-aos-delay="600" className="space-y-3">
-          <h3 className="text-lg sm:text-xl font-semibold text-purple-300">Frameworks & Tools</h3>
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-            {tools.map((s) => (
-              <SkillBadge key={s.name} name={s.name} icon={s.icon} />
-            ))}
-          </div>
-        </div>
+        <SkillGroup title="Languages" items={languages} delay="500" />
+        <SkillGroup title="Frameworks & Libraries" items={frameworks} delay="600" />
+        <SkillGroup title="Databases" items={databases} delay="700" />
+        <SkillGroup title="DevOps & Infrastructure" items={devops} delay="800" />
       </div>
     </section>
   )
