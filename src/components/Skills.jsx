@@ -1,11 +1,11 @@
 import React from 'react'
 import {
   SiJavascript, SiHtml5, SiCss, SiPython, SiReact, SiGit, SiMongodb,
-  SiTensorflow, SiKeras, SiUnity, SiLangchain, SiNodedotjs, SiPostgresql, SiRedis,
-  SiStreamlit, SiPandas, SiDocker, SiHuggingface, SiC, SiCplusplus,
+  SiTensorflow, SiKeras, SiLangchain, SiNodedotjs, SiPostgresql, SiRedis,
+  SiStreamlit, SiPandas, SiDocker, SiHuggingface, SiC, SiCplusplus, SiTypescript,
 } from 'react-icons/si'
-import { TbSql } from 'react-icons/tb'
-import { FaJava } from 'react-icons/fa'
+import { TbSql, TbMatrix, TbBinaryTree2 } from 'react-icons/tb'
+import { FaJava, FaAws } from 'react-icons/fa'
 import { VscVscode } from 'react-icons/vsc'
 
 const languages = [
@@ -14,9 +14,11 @@ const languages = [
   { name: 'HTML', icon: SiHtml5 },
   { name: 'CSS', icon: SiCss },
   { name: 'JavaScript', icon: SiJavascript },
+  { name: 'TypeScript', icon: SiTypescript },
   { name: 'SQL', icon: TbSql },
   { name: 'C', icon: SiC },
   { name: 'C++', icon: SiCplusplus },
+  { name: 'MATLAB', icon: TbMatrix },
 ]
 
 const frameworks = [
@@ -24,11 +26,11 @@ const frameworks = [
   { name: 'Node', icon: SiNodedotjs },
   { name: 'TensorFlow', icon: SiTensorflow },
   { name: 'Keras', icon: SiKeras },
-  { name: 'Unity', icon: SiUnity },
   { name: 'LangChain', icon: SiLangchain },
   { name: 'Streamlit', icon: SiStreamlit },
   { name: 'Pandas', icon: SiPandas },
   { name: 'Hugging Face', icon: SiHuggingface },
+  { name: 'XGBoost', icon: TbBinaryTree2 },
 ]
 
 const databases = [
@@ -39,6 +41,7 @@ const databases = [
 
 const devops = [
   { name: 'Docker', icon: SiDocker },
+  { name: 'AWS', icon: FaAws },
   { name: 'Git', icon: SiGit },
   { name: 'VS Code', icon: VscVscode },
 ]
@@ -76,7 +79,7 @@ export default function Skills() {
             My Expertise <br /> and <span className="text-purple-400">Skills</span>
           </h1>
           <p className="text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base">
-            Amazon Cloud Practitioner Certified
+            AWS Certified Cloud Practitioner
           </p>
         </header>
 

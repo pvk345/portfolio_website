@@ -27,10 +27,11 @@ export default function Education() {
             <p className="text-gray-400 text-sm mt-1">May 2028</p>
           </header>
           <ul className="list-disc list-inside space-y-2 text-gray-300 text-sm sm:text-base">
-            <li>GPA: 3.78 / 4.0 &middot; Dean&apos;s List</li>
+            <li>GPA: 3.79 / 4.0 &middot; Dean&apos;s List</li>
             <li>
-              Relevant Courses: Data Structures (Java), Linear Algebra, Mobile App Development,
-              Discrete Structures, Computer Architecture, Data Management for Data Science
+              Relevant Courses: Data Structures (Java), Linear Algebra, Discrete Structures,
+              Computer Architecture, Data Management for Data Science, Design and Analysis of
+              Computer Algorithms, Numerical Analysis and Computing
             </li>
           </ul>
         </article>

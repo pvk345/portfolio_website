@@ -45,8 +45,6 @@ export default function Projects() {
       description: `
         • Built a full-stack outreach automation tool that discovers company recruiters via the Apollo.io
         API and drafts personalized cold emails using OpenAI.
-        • Integrated the Gmail API with OAuth2 to send drafted emails directly through the user's own
-        Gmail account.
         • Engineered a LangChain agent with a custom web-search tool to autonomously research target
         companies in real time, grounding each email in verifiable, company-specific facts instead of
         generic language.
@@ -57,7 +55,7 @@ export default function Projects() {
     },
     {
       Icon: SiNextdotjs,
-      title: "Polymarket Trader",
+      title: "Polymarket Trader (Live Demo)",
       subtitle: "Next.js, FastAPI, PostgreSQL, Redis, AWS Lambda, Vercel, Render, Docker, Resend",
       description: `
         • Built a full-stack automated trading platform that evaluates Polymarket prediction-market
@@ -71,7 +69,7 @@ export default function Projects() {
         • Implemented JWT authentication with bcrypt password hashing and Redis-backed caching for live
         market data.
       `,
-      link: "https://github.com/pvk345",
+      link: "https://frontend-delta-fawn-63.vercel.app/",
     },
   ];
 

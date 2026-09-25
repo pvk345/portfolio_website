@@ -4,13 +4,14 @@ const experienceData = [
   {
     id: 1,
     role: 'Software Engineer Intern',
-    org: 'NeuZenAI',
+    org: 'Neuzen AI',
     location: 'Dallas, Texas',
     dates: 'May 2026 - August 2026',
     bullets: [
       'Designed a Model Context Protocol (MCP) server for an AI-powered social media content generation platform.',
       'Gave AI assistants (Claude, ChatGPT, Cursor) tool-based access to generate, review, and publish content — 15 tools spanning content generation, live publishing, and multi-day campaign planning with a human-approval workflow.',
       'Built and designed a token and OAuth-based authentication architecture, producing a full technical implementation for MCP connection.',
+      'Built a REST API and three Agent Skills, giving autonomous coding agents direct platform access.',
     ],
   },
   {
