@@ -26,7 +26,7 @@ const ProjectCard = ({ Icon, title, subtitle, description, link }) => {
             <p className="text-purple-400 text-sm mb-3">{subtitle}</p>
           </header>
           <ul className="text-gray-200 text-base">
-            {description.split("\n").map((item, index) => (
+            {description.map((item, index) => (
               <li key={index} className="mb-2">{item}</li>
             ))}
           </ul>
@@ -42,33 +42,24 @@ export default function Projects() {
       Icon: SiGmail,
       title: "Recruiter Outreach Automation",
       subtitle: "Python, Flask, LangChain, OpenAI API, SQLite, Apollo.io API, Gmail API (OAuth2)",
-      description: `
-        • Built a full-stack outreach automation tool that discovers company recruiters via the Apollo.io
-        API and drafts personalized cold emails using OpenAI.
-        • Engineered a LangChain agent with a custom web-search tool to autonomously research target
-        companies in real time, grounding each email in verifiable, company-specific facts instead of
-        generic language.
-        • Designed a SQLite-backed review workflow with rate-limited sending to protect email
-        deliverability and support safe, real-world outreach at scale.
-      `,
+      description: [
+        "• Built a full-stack outreach automation tool that discovers company recruiters via the Apollo.io API and drafts personalized cold emails using OpenAI.",
+        "• Engineered a LangChain agent with a custom web-search tool to autonomously research target companies in real time, grounding each email in verifiable, company-specific facts instead of generic language.",
+        "• Designed a SQLite-backed review workflow with rate-limited sending to protect email deliverability and support safe, real-world outreach at scale.",
+      ],
       link: "https://github.com/pvk345",
     },
     {
       Icon: SiNextdotjs,
       title: "Polymarket Trader (Live Demo)",
       subtitle: "Next.js, FastAPI, PostgreSQL, Redis, AWS Lambda, Vercel, Render, Docker, Resend",
-      description: `
-        • Built a full-stack automated trading platform that evaluates Polymarket prediction-market
-        probabilities against user-defined rules, live across ~500 markets.
-        • Integrated the Alpaca API to automatically place corresponding stock trades based on triggered
-        rules.
-        • Engineered an independently-scheduled evaluator on AWS Lambda (Docker/ECR, EventBridge) to
-        execute rule and watchlist logic against a Postgres database.
-        • Implemented multithreading with Python's ThreadPoolExecutor to parallelize concurrent ticker
-        price lookups, cutting refresh latency 9x (0.89s → 0.10s).
-        • Implemented JWT authentication with bcrypt password hashing and Redis-backed caching for live
-        market data.
-      `,
+      description: [
+        "• Built a full-stack automated trading platform that evaluates Polymarket prediction-market probabilities against user-defined rules, live across ~500 markets.",
+        "• Integrated the Alpaca API to automatically place corresponding stock trades based on triggered rules.",
+        "• Engineered an independently-scheduled evaluator on AWS Lambda (Docker/ECR, EventBridge) to execute rule and watchlist logic against a Postgres database.",
+        "• Implemented multithreading with Python's ThreadPoolExecutor to parallelize concurrent ticker price lookups, cutting refresh latency 9x (0.89s → 0.10s).",
+        "• Implemented JWT authentication with bcrypt password hashing and Redis-backed caching for live market data.",
+      ],
       link: "https://frontend-delta-fawn-63.vercel.app/",
     },
   ];
